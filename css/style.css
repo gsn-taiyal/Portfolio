@@ -7,12 +7,11 @@ body{
     scroll-behavior: s;
     font-family: "Ubuntu", sans-serif;
     color: #FFFFFF;
-    overflow-x: hidden ;
+    /* overflow-x: hidden ; */
 
 }
 .navbar{
     background: linear-gradient(to right, #2B2D42, #000000);
-    width: 100%;
     height: 10vh;
 
     margin: 0;
@@ -25,11 +24,10 @@ body{
 
 .right-nav{
     margin-left: auto;
-    padding-right: 20px;
-    width: 50%;
+        width: 50%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 15%;
+        padding-right: 15%;
 }
 .left-nav{
     width: 50%;
@@ -68,7 +66,6 @@ h1{
 .home{
     background-color: black;
     height: 90vh;
-    width: 100vw;
     display: flex;
 }
 .left-home{
@@ -122,7 +119,6 @@ h1{
     overflow: hidden;
     margin-top: auto;
     text-align: center;
-    width: 100vw;
 }
 .box{
     width: 25vw;
@@ -148,7 +144,6 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 85vh;
 
 
 }
@@ -213,15 +208,17 @@ h1{
 .qualifications{
     background-color: #2B2D42;
     text-align: center;
-    padding-bottom  : 5%;
-    width: 100vw;
+    /* padding-bottom  : 15%; */
+
+    padding: 3vh;
+    padding-bottom: 5%;
 }
 .heading-q{
     border-right: .2rem solid white ;
         font-weight: 200;
         color: #FFFFFF;
     overflow: hidden;
-    font-size: 8vh;
+    font-size: 5vw;
     margin: auto;
     animation: typing2 steps(30) 3s;
 }
@@ -285,7 +282,6 @@ h1{
 }
 
 .footer{
-    width: 100vw;
     background-color: #f8f32b;
     display: flex;
     padding-bottom: 5vh;
@@ -331,8 +327,8 @@ h1{
     padding-left: 1.5vw;
 }
 input{
-    padding: 1em;
-    border-radius: 15px;
+    padding: 4%;
+    border-radius: 10px;
     margin-left: .5vw;
     margin-top: .5vw;
 }
@@ -388,4 +384,39 @@ transition: .6s;
 }
 .up-arrow:active{
     color: #f8f32b;
+}
+
+@media (width < 950px) {
+    .home{
+        flex-direction:column;
+        align-items: center;
+    }
+    .image-pfp{
+       opacity: 0;
+    }
+
+
+    .box-container{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 90vw;
+    }
+    .box-head{
+        font-size: 10vw;
+    }
+    .heading{
+        width: 25vw;
+    }
+
+    .cert{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cert-img{
+        width: 75vw;
+        height: auto;
+        margin-top: 5vw;
+    }
 }
